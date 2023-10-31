@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MyComps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="p-3">
+        <hr>
+        <a href="../Homepage/index.html"><button class="btn btn-warning">Esas Sehife</button></a>
+        <hr>
+    </div>
+    <div class="bodydiv p-3 d-flex justify-content-space-around">
+        <div class="leftDiv d-flex flex-column">
+            <input type="text" placeholder="Axtarish" class="w-75 p-1">
+
+            <div class="btn-group-vertical" role="group">
+                <button type="button" class="brandBtn btn w-75 text-left border-secondary rounded-0" value="acer">Acer</button>
+                <button type="button" class="brandBtn btn w-75 text-left border-secondary rounded-0" value="asus">Asus</button>
+                <button type="button" class="brandBtn btn w-75 text-left border-secondary rounded-0" value="dell">Dell</button>
+                <button type="button" class="brandBtn btn w-75 text-left border-secondary rounded-0" value="hp">HP</button>
+                <button type="button" class="brandBtn btn w-75 text-left border-secondary rounded-0" value="lenovo">Lenovo</button>
+              </div>          
+        </div>
+        <div class="compsDiv"></div>
+    </div>
+    <!-- Modal for comp description -->
+    <div class="modal fade" id="detailsOfLaptop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <div class="detailedInfoDiv">
+                <p class="text-light" >examp</p>
+                <h5 class="modal-title" id="exampleModalLabel">Kompyuter haqqinda etrafli melumat</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <img src="../images/acer.jpg" alt="laptopImage">
+              <div class="paramsDiv">
+                <p>Ad</p>
+                <p>Tesvir</p>
+                <p>Qiymet</p>
+                <p>Telefon</p>
+                <p>Yeni</p>
+                <p>Emeli yaddash</p>
+                <p>CPU</p>
+                <p>Daimi Yaddash</p>
+                <p>Daimi Yaddash Tipi</p>
+                <p>Emeliyyat Sistemi</p>
+                <p>Videokart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

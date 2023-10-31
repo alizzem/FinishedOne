@@ -1,0 +1,52 @@
+.navdiv{
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+    padding: 15px;
+}
+
+.maindiv{
+    padding: 20px;
+}
+
+.mainpage{
+    background-color: #FFBB00;
+}
+
+.imagewidth{
+    width: 15%;
+    display: block;
+    text-align: center;
+}
+
+.mainpage:hover{
+    background-color: #E6A400;
+    cursor: pointer;
+}
+
+.newcomp{
+    background-color: #0077FF;
+    cursor: pointer;
+    color: white;
+}
+
+.newcomp:hover{
+    background-color: #0068e0;
+}
+
+.bodydiv{
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.size{
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.search_input{
+    border-radius: 3px;
+    padding: 5px 7px;
+}

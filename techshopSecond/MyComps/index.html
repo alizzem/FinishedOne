@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MyComps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navdiv">
+        <a href="../Homepage/index.html"><button class="mainpage size">Əsas səhifə</button></a>
+        <button class="newcomp size" data-bs-toggle ="modal" data-bs-target="#addmodal">Yeni kompyuter</button>
+    </div>
+    <div class="modal fade" id="addmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content bg-light">
+          <div class="modal-header">
+            <h5 class="modal-title">Yeni</h5>
+            <button type="button" class="close bg-danger text-light" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body container">
+            <div class="row params">
+              <div class="col-6">
+                <label class="mt-1">Kateqoriya:</label>
+                <select class="form-control is-valid">
+                  <option value="Acer">Acer</option>
+                  <option value="Asus">Asus</option>
+                  <option value="Dell">Dell</option>
+                  <option value="HP">HP</option>
+                  <option value="Lenovo">Lenovo</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label class="mt-1">Emeli Yaddash (GB):</label>
+                <input type="text" class="form-control is-invalid categoryinput">
+                <label class="text-danger">Bosh qoymayin</label>
+              </div>
+              <div class="col-6">
+                <label class="mt-1">Ad:</label>
+                <input type="text" class="form-control is-invalid categoryinput">
+                <label class="text-danger">Bosh qoymayin</label>
+              </div>
+              <div class="col-6">
+                <label class="mt-1">Merkezi Prosessor:</label>
+                <input type="text" class="form-control is-invalid categoryinput">
+                <label class="text-danger">Bosh qoymayin</label>
+              </div>
+              <div class="col-6">
+                <label class="mt-1">Qiymet:</label>
+                <input type="number" class="form-control is-invalid categoryinput">
+                <label class="text-danger">Bosh qoymayin</label>
+              </div>
+              <div class="col-6">
+                <label class="mt-1">Daimi Yaddash (GB):</label>
+                <input type="text" class="form-control is-invalid categoryinput">
+                <label class="text-danger">Bosh qoymayin</label>
+              </div>
+              <div class="col-6">
+                <label class="mt-1">Tesvir:</label>
+                <input type="text" class="form-control is-invalid categoryinput">
+                <label class="text-danger">Bosh qoymayin</label>
+              </div>
+              <div class="col-6">
+                <label class="mt-1">Kateqoriya:</label>
+                <select class="form-control is-valid">
+                  <option value="HDD">HDD</option>
+                  <option value="SDD">SDD</option>
+                  <label class="text-warning">Bosh qoymayin</label>
+                </select>
+              </div>
+              <div class="col-6">
+                <label class="mt-1">Yeni:</label>
+                <select class="form-control is-valid">
+                  <option value="Yes">Beli</option>
+                  <option value="No">Xeyr</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label class="mt-1">Emelittat sistemi:</label>
+                <input type="text" class="form-control is-invalid categoryinput">
+                <label class="text-danger">Bosh qoymayin</label>
+              </div>
+              <div class="col-6">
+                <label class="mt-1">Shekil:</label>
+                <input type="url" class="form-control is-invalid categoryinput photourl">
+                <label class="text-danger">Bosh qoymayin</label>
+              </div>
+              <div class="col-6">
+                <label class="mt-1">Video kart (GB):</label>
+                <input type="text" class="form-control is-invalid categoryinput">
+                <label class="text-danger">Bosh qoymayin</label>
+              </div>
+            </div>
+            <img class="compimg mt-4 w-25" alt="Laptop Image">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary datasave" data-bs-dismiss="modal">Yadda Saxla</button>
+            <button type="button" class="btn btn-warning dataclean">Məlumatı sıfırla</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Maindiv--------------------------------------------------------------->
+
+    <div class="maindiv">
+        <div class="bodydiv">
+            <p>
+                Show
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                entries
+            </p>
+            <div class="search">
+                <p>
+                    Search:
+                    <input class="search_input" type="text" >
+                </p>
+            </div>
+        </div>
+
+        <table class="comptable table table-bordered p-1">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Ad</th>
+                <th>Şəkil</th>
+                <th>Qiymət</th>
+                <th>Əməliyyatlar</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+</head>
+<body>
+    <div class="log_div">
+        <hr>
+        <a href="../Homepage/index.html"><button class="back">Əsas səhifə</button></a>
+        <hr>
+        <h1>Hesab yaratmaq</h1>
+        <hr>
+        <form class="registration_form">
+            <p>Ad:</p>
+            <input type="text"  class="input1 form-control is-invalid" maxlength="30" id="nameinput">
+            <label id="namelabel">Boş qoymayın. Minimum 2, maksimum 30 simvol ola bilər</label>
+            <p>Telefon:</p>
+            <input type="text" class="input2 form-control is-invalid" id="phoneinput" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <label>Telefon düzgün formada yazılmayıb. Bu (000-000-0000) formatda yazılmalıdır</label>
+            <p>İstifadəçi adı:</p>
+            <input type="text" class="input1 form-control is-invalid">
+            <label>Boş qoymayın. Minimum 2, maksimum 30 simvol ola bilər</label>
+            <p>Şifrə:</p>
+            <input type="password" class="input1 form-control is-invalid">
+            <label>Boş qoymayın. Minimum 2, maksimum 30 simvol ola bilər</label><br>
+            <button type="button" class="enter">Hesab yarat</button>
+        </form>
+        <hr>
+        <p>Artıq mövcud hesab var? <a href="../Login/index.html"><button>Hesaba daxil ol</button></a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html

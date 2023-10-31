@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.log_div{
+    padding: 0px 5px;
+    width: 30%;
+    margin: 0px auto;
+}
+
+hr{
+    margin: 15px 0px;
+}
+
+.back{
+    background-color: #FFBB00;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.back:hover{
+    background-color: #E6A400;
+    cursor: pointer;
+}
+
+label{
+    display: block;
+    margin: 5px 0px 5px;
+    font-size: 13px;
+    color: #b41917;
+}
+
+p{
+    margin: 15px 0px 10px;
+}
+
+.input1{
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px 5px;
+    border: 2px solid #b41917;
+    outline: none;
+}
+
+.input2{
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px 5px;
+    border: 2px solid #b41917;
+    outline: none;
+}
+
+.enter{
+    color: white;
+    margin: 15px 0px 5px;
+    background-color: #1E9543;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.enter:hover{
+    background-color: #1B7A37;
+}
+
+p button{
+    color: white;
+    background-color: #0077FF;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+p button:hover{
+    background-color: #0061D9;
+}
